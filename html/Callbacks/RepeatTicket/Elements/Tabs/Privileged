@@ -19,7 +19,7 @@ if ( $request_path =~ m{^/Ticket/} ) {
             }
         };
 
-        if ( $can->('ModifyTicket') ) {
+        if ( $can->('ModifyRecurrence') ) {
             $tabs->child( repeat => title => loc('Recurrence'), path => "/Ticket/ModifyRecurrence.html?id=" . $id );
         }
     }

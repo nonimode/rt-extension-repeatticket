@@ -6,5 +6,5 @@
 $Ticket
 </%args>
 <%init>
-my $can_modify = $Ticket->CurrentUserHasRight('ModifyTicket');
+my $can_modify = $Ticket->CurrentUserHasRight('ModifyRecurrence');
 </%init>

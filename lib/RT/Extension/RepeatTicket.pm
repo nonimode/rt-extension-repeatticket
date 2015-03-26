@@ -5,6 +5,9 @@ package RT::Extension::RepeatTicket;
 
 our $VERSION = "1.00";
 
+use RT::System;
+'RT::System'->AddRight( Staff   => ModifyRecurrence => 'Modify recurrence options for tickets'); # loc
+
 use RT::Interface::Web;
 use DateTime;
 use RT::Date;
